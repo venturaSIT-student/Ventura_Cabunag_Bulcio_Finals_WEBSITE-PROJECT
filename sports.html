@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <title>General Sports</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+    /* Simple style for the "Back to the top" button */
+    .back-to-top {
+        display: inline-block;
+        margin: 20px 0 0 0;
+        padding: 8px 18px;
+        background: #22a6b3;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background 0.2s;
+        cursor: pointer;
+    }
+    .back-to-top:hover {
+        background: #0f5e6a;
+    }
+    .images-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        margin: 24px 0;
+    }
+    .images-grid figure {
+        text-align: center;
+        max-width: 200px;
+    }
+    .images-grid img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(34,166,179,0.10);
+    }
+    .images-grid figcaption {
+        margin-top: 8px;
+        font-size: 1em;
+        color: #333;
+    }
+    </style>
 </head>
 <body>
-    <header>
+    <header id="top">
         <h1>Welcome to General Sports</h1>
         <nav>
             <ul>
@@ -18,6 +57,7 @@
                 <li><a href="#swimming">Swimming</a></li>
                 <li><a href="#golf">Golf</a></li>
                 <li><a href="#american-football">American Football</a></li>
+                <li><a href="#images">Images</a></li>
                 <li><a href="#benefits">Benefits</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,6 +71,7 @@
             They can help us stay healthy and foster a sense of camaraderie and competition. Discover the most popular sports and some of their iconic players below!
         </p>
         <p class="player-highlight"><strong>Featured Athlete:</strong> <em>Michael Jordan</em> (Legendary Basketball Player)</p>
+        <a href="#top" class="back-to-top">Back to the top</a>
     </section>
 
     <section id="football" class="section">
@@ -39,6 +80,7 @@
             Football, also known as soccer, is the world's most popular sport, played and watched by millions. It is loved for its simplicity and the passion it inspires globally.
         </p>
         <p class="player-highlight"><strong>Popular Player:</strong> <em>Lionel Messi</em></p>
+        <a href="#top" class="back-to-top">Back to the top</a>
     </section>
 
     <section id="basketball" class="section">
@@ -47,6 +89,7 @@
             Basketball is a fast-paced sport where two teams try to score by shooting a ball through a hoop. It is especially popular in the United States and is known for its exciting gameplay.
         </p>
         <p class="player-highlight"><strong>Popular Player:</strong> <em>LeBron James</em></p>
+        <a href="#top" class="back-to-top">Back to the top</a>
     </section>
 
     <section id="tennis" class="section">
@@ -55,6 +98,7 @@
             Tennis is a sport that can be played individually or in doubles. Players use a racket to hit a ball over a net, aiming to win points by making shots the opponent can't return.
         </p>
         <p class="player-highlight"><strong>Popular Player:</strong> <em>Serena Williams</em></p>
+        <a href="#top" class="back-to-top">Back to the top</a>
     </section>
 
     <section id="cricket" class="section">
@@ -63,6 +107,7 @@
             Cricket is a bat-and-ball game popular in many countries, especially in Asia, Australia, and the UK. It requires strategy, skill, and teamwork.
         </p>
         <p class="player-highlight"><strong>Popular Player:</strong> <em>Virat Kohli</em></p>
+        <a href="#top" class="back-to-top">Back to the top</a>
     </section>
 
     <section id="swimming" class="section">
@@ -71,6 +116,7 @@
             Swimming is both a recreational and competitive sport. It promotes fitness and is an essential life skill practiced everywhere from pools to open waters.
         </p>
         <p class="player-highlight"><strong>Popular Player:</strong> <em>Michael Phelps</em></p>
+        <a href="#top" class="back-to-top">Back to the top</a>
     </section>
 
     <section id="golf" class="section">
@@ -79,6 +125,7 @@
             Golf is a precision sport originally popularized in Scotland. It tests patience, skill, and strategy as players aim to put a ball into a series of holes with as few strokes as possible.
         </p>
         <p class="player-highlight"><strong>Popular Player:</strong> <em>Tiger Woods</em></p>
+        <a href="#top" class="back-to-top">Back to the top</a>
     </section>
 
     <section id="american-football" class="section">
@@ -87,6 +134,42 @@
             American Football is known for its physicality and strategy. It is a major sport in the United States, culminating in the iconic Super Bowl event each year.
         </p>
         <p class="player-highlight"><strong>Popular Player:</strong> <em>Tom Brady</em></p>
+        <a href="#top" class="back-to-top">Back to the top</a>
+    </section>
+    
+    <section id="images" class="section">
+        <h2>Popular Sports Images</h2>
+        <div class="images-grid">
+            <figure>
+                <img src="https://images.unsplash.com/photo-1505843271137-32533872c91a?auto=format&fit=crop&w=400&q=80" alt="Football (Soccer)">
+                <figcaption>Football (Soccer)</figcaption>
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=80" alt="Basketball">
+                <figcaption>Basketball</figcaption>
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1517649763962-d3d5f7b1ad04?auto=format&fit=crop&w=400&q=80" alt="Tennis">
+                <figcaption>Tennis</figcaption>
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1518081461904-9be7bbe0e1e7?auto=format&fit=crop&w=400&q=80" alt="Cricket">
+                <figcaption>Cricket</figcaption>
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1504309095743-c6e8e1b3aee9?auto=format&fit=crop&w=400&q=80" alt="Swimming">
+                <figcaption>Swimming</figcaption>
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Golf">
+                <figcaption>Golf</figcaption>
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1519332978332-21b7d3b8d36d?auto=format&fit=crop&w=400&q=80" alt="American Football">
+                <figcaption>American Football</figcaption>
+            </figure>
+        </div>
+        <a href="#top" class="back-to-top">Back to the top</a>
     </section>
 
     <section id="benefits" class="section">
@@ -102,6 +185,7 @@
             <li>Teaches discipline and patience</li>
         </ol>
         <p class="player-highlight"><strong>Featured Athlete:</strong> <em>Simone Biles</em> (Olympic Gymnast)</p>
+        <a href="#top" class="back-to-top">Back to the top</a>
     </section>
 
     <section id="contact" class="section">
@@ -115,6 +199,7 @@
             <textarea placeholder="Your Message" required></textarea><br>
             <button type="submit">Send</button>
         </form>
+        <a href="#top" class="back-to-top">Back to the top</a>
     </section>
 
     <footer>
